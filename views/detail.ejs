@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1>Message Detail</h1>
+    <div style="margin: 20px 0; padding: 10px; border: 1px solid #ccc">
+      <h3><%= message.username %></h3>
+      <p><%= message.text %></p>
+      <small><%= new Date(message.added).toLocaleString() %></small>
+    </div>
+    <a href="/">Back to Home</a>
+  </body>
+</html>

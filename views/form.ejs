@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="POST" action="/new">
+      <div style="margin-bottom: 10px">
+        <label for="messageUser">Name:</label>
+        <input type="text" id="messageUser" name="messageUser" required />
+      </div>
+
+      <div style="margin-bottom: 10px">
+        <label for="messageText">Message:</label>
+        <textarea id="messageText" name="messageText" required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
